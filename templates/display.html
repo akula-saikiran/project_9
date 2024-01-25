@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#adff2f">
+<center>
+    <h1>
+        
+            <table border="2"><th>pid</th><th>pname</th><th>pcost</th><th>pmfdt</th><th>pexpdt</th>
+           {% for rec in pro %}
+    <tr><td>{{ rec.pid}}</td><td>{{ rec.pname}}</td><td>{{ rec.pcost}}</td><td>{{ rec.pmfdt}}</td><td>{{ rec.pexpdt}}</td></tr>
+    {%  endfor %}
+            </table>
+    </h1>
+</center>
+</body>
+</html>
